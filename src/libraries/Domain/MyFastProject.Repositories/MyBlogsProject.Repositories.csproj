@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\infrastructure\MyFastProject.DataAccess\MyBlogsProject.DataAccess.csproj" />
+    <ProjectReference Include="..\..\infrastructure\MyFastProject.Service.Models\MyBlogsProject.Service.csproj" />
+    <ProjectReference Include="..\MyFastProject.Modles\MyBlogsProject.Model.csproj" />
+    <ProjectReference Include="..\MyFastProject.Shared\MyBlogsProject.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
