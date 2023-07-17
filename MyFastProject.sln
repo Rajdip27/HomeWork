@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFastProject.Model", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFastProject.Repositories", "src\libraries\Domain\MyFastProject.Repositories\MyFastProject.Repositories.csproj", "{312BBE4A-6783-45A9-A9A4-48BCF06D8FED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlogsProject.Shared", "src\libraries\Domain\MyFastProject.Shared\MyBlogsProject.Shared.csproj", "{B4433752-3FA4-4266-A0CA-E622FDFA33A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFastProject.Shared", "src\libraries\Domain\MyFastProject.Shared\MyFastProject.Shared.csproj", "{B4433752-3FA4-4266-A0CA-E622FDFA33A8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFastProject.DataAccess", "src\libraries\infrastructure\MyFastProject.DataAccess\MyFastProject.DataAccess.csproj", "{C773FA09-6732-4F81-8281-1AC0204EC657}"
 EndProject

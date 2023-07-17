@@ -10,7 +10,7 @@
     <ProjectReference Include="..\..\infrastructure\MyFastProject.DataAccess\MyFastProject.DataAccess.csproj" />
     <ProjectReference Include="..\..\infrastructure\MyFastProject.Service.Models\MyFastProject.Service.csproj" />
     <ProjectReference Include="..\MyFastProject.Modles\MyFastProject.Model.csproj" />
-    <ProjectReference Include="..\MyFastProject.Shared\MyBlogsProject.Shared.csproj" />
+    <ProjectReference Include="..\MyFastProject.Shared\MyFastProject.Shared.csproj" />
   </ItemGroup>
 
 </Project>
