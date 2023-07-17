@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\MyFastProject.Modles\MyBlogsProject.Model.csproj" />
+    <ProjectReference Include="..\..\Domain\MyFastProject.Modles\MyFastProject.Model.csproj" />
   </ItemGroup>
 
 </Project>

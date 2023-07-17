@@ -15,21 +15,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{444452
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{727F7AF0-2EE5-4047-8AEB-A824D36D27D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlogsProject.Model", "src\libraries\Domain\MyFastProject.Modles\MyBlogsProject.Model.csproj", "{B9BA2C7B-260F-4525-B34B-48823D5F34AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFastProject.Model", "src\libraries\Domain\MyFastProject.Modles\MyFastProject.Model.csproj", "{B9BA2C7B-260F-4525-B34B-48823D5F34AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlogsProject.Repositories", "src\libraries\Domain\MyFastProject.Repositories\MyBlogsProject.Repositories.csproj", "{312BBE4A-6783-45A9-A9A4-48BCF06D8FED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFastProject.Repositories", "src\libraries\Domain\MyFastProject.Repositories\MyFastProject.Repositories.csproj", "{312BBE4A-6783-45A9-A9A4-48BCF06D8FED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlogsProject.Shared", "src\libraries\Domain\MyFastProject.Shared\MyBlogsProject.Shared.csproj", "{B4433752-3FA4-4266-A0CA-E622FDFA33A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlogsProject.Shared", "src\libraries\Domain\MyFastProject.Shared\MyBlogsProject.Shared.csproj", "{B4433752-3FA4-4266-A0CA-E622FDFA33A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlogsProject.DataAccess", "src\libraries\infrastructure\MyFastProject.DataAccess\MyBlogsProject.DataAccess.csproj", "{C773FA09-6732-4F81-8281-1AC0204EC657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFastProject.DataAccess", "src\libraries\infrastructure\MyFastProject.DataAccess\MyFastProject.DataAccess.csproj", "{C773FA09-6732-4F81-8281-1AC0204EC657}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlogsProject.IoC.Configuration", "src\libraries\infrastructure\MyFastProject.IoC.Configuration\MyBlogsProject.IoC.Configuration.csproj", "{08DC2D46-180B-4EA1-9981-13FB8CD6755E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFastProject.IoC.Configuration", "src\libraries\infrastructure\MyFastProject.IoC.Configuration\MyFastProject.IoC.Configuration.csproj", "{08DC2D46-180B-4EA1-9981-13FB8CD6755E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlogsProject.Backend", "src\App\MyFastProject.Backend\MyBlogsProject.Backend.csproj", "{735065D7-750E-4F68-BBCA-389A77C92669}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFastProject.Backend", "src\App\MyFastProject.Backend\MyFastProject.Backend.csproj", "{735065D7-750E-4F68-BBCA-389A77C92669}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlogsProject.Core", "src\libraries\infrastructure\MyFastProject.Core\MyBlogsProject.Core.csproj", "{A045B16B-6A7B-4D6C-8FB2-B3AB1B941446}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFastProject.Core", "src\libraries\infrastructure\MyFastProject.Core\MyFastProject.Core.csproj", "{A045B16B-6A7B-4D6C-8FB2-B3AB1B941446}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlogsProject.Service", "src\libraries\infrastructure\MyFastProject.Service.Models\MyBlogsProject.Service.csproj", "{40AA0145-8120-4F9B-B94E-2F78E52A6291}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFastProject.Service", "src\libraries\infrastructure\MyFastProject.Service.Models\MyFastProject.Service.csproj", "{40AA0145-8120-4F9B-B94E-2F78E52A6291}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\infrastructure\MyFastProject.DataAccess\MyBlogsProject.DataAccess.csproj" />
-    <ProjectReference Include="..\..\infrastructure\MyFastProject.Service.Models\MyBlogsProject.Service.csproj" />
-    <ProjectReference Include="..\MyFastProject.Modles\MyBlogsProject.Model.csproj" />
+    <ProjectReference Include="..\..\infrastructure\MyFastProject.DataAccess\MyFastProject.DataAccess.csproj" />
+    <ProjectReference Include="..\..\infrastructure\MyFastProject.Service.Models\MyFastProject.Service.csproj" />
+    <ProjectReference Include="..\MyFastProject.Modles\MyFastProject.Model.csproj" />
     <ProjectReference Include="..\MyFastProject.Shared\MyBlogsProject.Shared.csproj" />
   </ItemGroup>
 

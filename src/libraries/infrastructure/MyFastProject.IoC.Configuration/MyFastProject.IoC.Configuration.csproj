@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyFastProject.Core\MyBlogsProject.Core.csproj" />
-    <ProjectReference Include="..\MyFastProject.DataAccess\MyBlogsProject.DataAccess.csproj" />
+    <ProjectReference Include="..\MyFastProject.Core\MyFastProject.Core.csproj" />
+    <ProjectReference Include="..\MyFastProject.DataAccess\MyFastProject.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

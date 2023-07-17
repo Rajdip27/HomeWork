@@ -12,9 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\MyFastProject.Modles\MyBlogsProject.Model.csproj" />
-    <ProjectReference Include="..\..\Domain\MyFastProject.Repositories\MyBlogsProject.Repositories.csproj" />
-    <ProjectReference Include="..\MyFastProject.Service.Models\MyBlogsProject.Service.csproj" />
+    <ProjectReference Include="..\..\Domain\MyFastProject.Modles\MyFastProject.Model.csproj" />
+    <ProjectReference Include="..\..\Domain\MyFastProject.Repositories\MyFastProject.Repositories.csproj" />
+    <ProjectReference Include="..\MyFastProject.Service.Models\MyFastProject.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>

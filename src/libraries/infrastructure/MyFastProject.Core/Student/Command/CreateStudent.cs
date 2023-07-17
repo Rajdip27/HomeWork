@@ -7,6 +7,7 @@ namespace MyFastProject.Core.Student.Command;
 
 public class CreateStudent
 {
+	
 	public record CreateStudentCommand(Service.Models.ViewModel.Student Student):IRequest<Service.Models.ViewModel.Student>;
 
 	public class CreateStudentCommandHanlder : IRequestHandler<CreateStudentCommand, Service.Models.ViewModel.Student>
