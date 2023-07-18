@@ -63,15 +63,17 @@ namespace MyFastProject.Shared.Contracts
 
 		public async Task<IModel?> Update(T id, TEntity entity)
 		{
-			var existingEntity = await DbSet.FindAsync(id);
-			if (existingEntity != null)
+			if (entity == null)
 			{
-				_mapper.Map(entity, existingEntity);
-				await _dbContext.SaveChangesAsync();
-				return _mapper.Map<IModel>(existingEntity);
+				throw new ArgumentNullException("entity");
 			}
-
-			return default; 
+			var exist = await DbSet.FindAsync(id);
+			if (exist != null)
+			{
+				DbSet.Entry(exist).CurrentValues.SetValues(entity);
+			   await	_dbContext.SaveChangesAsync();
+			}
+			return _mapper.Map<IModel>(entity);
 		}
 
 

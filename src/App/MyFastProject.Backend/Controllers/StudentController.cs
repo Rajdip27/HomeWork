@@ -1,7 +1,11 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using MyFastProject.Core.Student.Command;
 using static MyFastProject.Core.Student.Command.CreateStudent;
+using static MyFastProject.Core.Student.Command.DeleteStudent;
+using static MyFastProject.Core.Student.Command.UpdateStudent;
 using static MyFastProject.Core.Student.Query.GetStudentByIdQuery;
+
 
 namespace MyFastProject.Backend.Controllers;
 
@@ -26,4 +30,17 @@ public class StudentController : ControllerBase
 		var result= await _mediator.Send(new GetStudentQueryById(id));
 		return Ok(result);
 	}
+	[HttpPut("{id:int}")]
+	public async Task<ActionResult<Service.Models.ViewModel.Student>> UpdateStudent([FromBody]Service.Models.ViewModel.Student commandstudent,int id)
+	{
+		var result= await _mediator.Send(new UpdateStudentCommand(id,commandstudent));
+		return Ok(result);
+	}
+	[HttpDelete("{id:int}")]
+	public async Task<ActionResult<Service.Models.ViewModel.Student>>DeleteStudent(int id)
+	{
+	  await _mediator.Send(new DeleteStudentCommand(id));
+		return Ok(new { Message = "Delete Successfully" });
+	}
+
 }
