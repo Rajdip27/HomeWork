@@ -1,8 +1,4 @@
-using Microsoft.Extensions.DependencyInjection;
 using MyFastProject.IoC.Configuration;
-using MyFastProject.Repositories.Concrete;
-using MyFastProject.Repositories.Interfaces;
-using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 

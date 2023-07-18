@@ -47,18 +47,20 @@ namespace MyFastProject.Shared.Contracts
 			}
 		}
 
+		public Task<IEnumerable<IModel>> GetAll()
+		{
+			var data = DbSet.AsEnumerable();
+			var models = _mapper.Map<IEnumerable<IModel>>(data);
+			return Task.FromResult(models);
+		}
+
 		public async Task<IModel> GetById(T id)
 		{
 			var data = await DbSet.FindAsync(id);
 			return _mapper.Map<IModel>(data);
 		}
 
-		public async Task<IReadOnlyCollection<IModel>> List()
-		{
-			var entities = await DbSet.ToListAsync();
-			return entities.Select(entity => _mapper.Map<IModel>(entity)).ToList();
-		}
-
+		
 
 
 		public async Task<IModel?> Update(T id, TEntity entity)

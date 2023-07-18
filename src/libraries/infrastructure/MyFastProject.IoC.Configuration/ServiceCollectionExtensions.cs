@@ -6,7 +6,6 @@ using MyFastProject.Core.Mappers;
 using MyFastProject.DataAccess.DatabaseContext;
 using MyFastProject.Repositories.Concrete;
 using MyFastProject.Repositories.Interfaces;
-using System.Reflection;
 
 namespace MyFastProject.IoC.Configuration;
 
