@@ -12,8 +12,8 @@ using MyFastProject.DataAccess.DatabaseContext;
 namespace MyFastProject.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230717071602_CreateStudentTable")]
-    partial class CreateStudentTable
+    [Migration("20230718162601_Createalltable")]
+    partial class Createalltable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
