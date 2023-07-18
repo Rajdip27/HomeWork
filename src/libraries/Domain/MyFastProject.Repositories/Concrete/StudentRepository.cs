@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.EntityFrameworkCore;
 using MyFastProject.DataAccess.DatabaseContext;
 using MyFastProject.Repositories.Interfaces;
 using MyFastProject.Shared.Contracts;

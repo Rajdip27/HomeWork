@@ -10,6 +10,7 @@ public class UpdateStudent
 
 	public class UpdateStudentCommandHandler : IRequestHandler<UpdateStudentCommand, Service.Models.ViewModel.Student>
 	{
+		/// <summary>The student repository</summary>
 		private readonly IStudentRepository _studentRepository;
 		private readonly IMapper _mapper;
 
@@ -18,8 +19,10 @@ public class UpdateStudent
 			_studentRepository = studentRepository;
 			_mapper = mapper;
 		}
-
-		public  async Task<Service.Models.ViewModel.Student> Handle(UpdateStudentCommand request, CancellationToken cancellationToken)
+		/// <param name="request">The request</param>
+		/// <param name="cancellationToken">Cancellation token</param>
+		/// <returns>Response from the request</returns>
+		public async Task<Service.Models.ViewModel.Student> Handle(UpdateStudentCommand request, CancellationToken cancellationToken)
 		{
 			var rusult =  _mapper.Map<Model.Entites.Student>(request.student);
 			rusult.LastModified = DateTimeOffset.Now;

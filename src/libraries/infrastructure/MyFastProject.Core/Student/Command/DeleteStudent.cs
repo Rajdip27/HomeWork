@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using FluentValidation;
+using MediatR;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 using MyFastProject.Repositories.Interfaces;
 
 namespace MyFastProject.Core.Student.Command;
@@ -21,4 +23,14 @@ public class DeleteStudent
 		}
 	}
 
+	public class DeleteStudentCommandValidator: AbstractValidator<DeleteStudentCommand> 
+	{
+		/// <summary>
+		/// Initializes a new instance of the <see cref="DeleteStudentCommandValidator"/> class.
+		/// </summary>
+		public DeleteStudentCommandValidator()
+        {
+			RuleFor(x => x.id).NotEmpty().WithMessage("Id is required");
+        }
+    }
 }
