@@ -14,6 +14,12 @@ namespace MyFastProject.IoC.Configuration;
 
 public static class ServiceCollectionExtensions
 {
+	/// <summary>
+	/// Maps the core.
+	/// </summary>
+	/// <param name="services">The services.</param>
+	/// <param name="configuration">The configuration.</param>
+	/// <returns></returns>
 	public static IServiceCollection MapCore(this IServiceCollection services,IConfiguration configuration)
 	{
 		services.AddDbContext<ApplicationDbContext>(optins => optins.UseSqlServer(configuration.GetConnectionString("ConnString")));

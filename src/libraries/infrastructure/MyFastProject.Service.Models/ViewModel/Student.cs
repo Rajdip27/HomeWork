@@ -1,7 +1,9 @@
-﻿using MyFastProject.Shared;
+﻿using AutoMapper;
+using MyFastProject.Shared;
 
 namespace MyFastProject.Service.Models.ViewModel;
 
+//[AutoMap(typeof(Model.Entites.Student), ReverseMap = true)]
 public class Student:IVM
 {
 	/// <summary>

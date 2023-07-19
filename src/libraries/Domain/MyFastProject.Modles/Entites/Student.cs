@@ -1,7 +1,10 @@
 ﻿using MyFastProject.Shared;
+using System.Diagnostics.CodeAnalysis;
 
 namespace MyFastProject.Model.Entites;
 /// <summary>class Student</summary>
+
+[ExcludeFromCodeCoverage]
 public class Student: BaseAuditableEntity,IEntity
 {
 	/// <summary>
