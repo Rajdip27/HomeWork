@@ -14,17 +14,12 @@ namespace MyFastProject.IoC.Configuration;
 
 public static class ServiceCollectionExtensions
 {
-	/// <summary>
-	/// Maps the core.
-	/// </summary>
-	/// <param name="services">The services.</param>
-	/// <param name="configuration">The configuration.</param>
-	/// <returns></returns>
 	public static IServiceCollection MapCore(this IServiceCollection services,IConfiguration configuration)
 	{
 		services.AddDbContext<ApplicationDbContext>(optins => optins.UseSqlServer(configuration.GetConnectionString("ConnString")));
 		services.AddAutoMapper(typeof(StudentMappersProfile).Assembly);
 		services.AddTransient<IStudentRepository, StudentRepository>();
+		services.AddTransient<IProductRepository, ProductRepository>();
 		services.AddMediatR(options => options.RegisterServicesFromAssemblies(typeof(ICore).Assembly));
 		services.AddValidatorsFromAssembly(typeof(ICore).Assembly);
 		services.AddMediatR(cfg =>
@@ -32,9 +27,6 @@ public static class ServiceCollectionExtensions
 			cfg.RegisterServicesFromAssemblies(typeof(ICore).Assembly);
 			cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
 		});
-
-
 		return services;
-	
 	}
 }

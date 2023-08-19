@@ -23,4 +23,8 @@
     <ProjectReference Include="..\..\libraries\infrastructure\MyFastProject.IoC.Configuration\MyFastProject.IoC.Configuration.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
 </Project>

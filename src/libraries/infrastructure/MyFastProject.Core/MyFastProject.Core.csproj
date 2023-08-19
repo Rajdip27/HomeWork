@@ -18,4 +18,8 @@
     <ProjectReference Include="..\MyFastProject.Service.Models\MyFastProject.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Product\Query\" />
+  </ItemGroup>
+
 </Project>

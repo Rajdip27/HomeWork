@@ -24,7 +24,7 @@ public class StudentController : ControllerBase
 	/// </summary>
 	/// <param name="qurey"></param>
 	/// <returns></returns>
-	[HttpPost("Create")]
+	[HttpPost]
 	public async Task<ActionResult<Service.Models.ViewModel.Student>> Create([FromBody] Service.Models.ViewModel.Student qurey)
 	{
 		var result = await _mediator.Send(new CreateStudentCommand(qurey));

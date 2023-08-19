@@ -10,5 +10,7 @@ public class StudentMappersProfile:Profile
 	public StudentMappersProfile()
     {
         CreateMap<Service.Models.ViewModel.Student,Model.Entites.Student>().ReverseMap();
+        CreateMap<Service.ViewModel.Product,Model.Entites.Product>().ReverseMap();
+
     }
 }
